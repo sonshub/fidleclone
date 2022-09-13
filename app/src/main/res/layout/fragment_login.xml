@@ -8,17 +8,78 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/keep_earning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login to Keep Earning"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/fidle_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="30dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/not_registered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Registered?"
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@id/login_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"/>
+
+    <TextView
+        android:id="@+id/forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@id/keep_earning"
+        app:layout_constraintBottom_toTopOf="@id/login_btn"
+        app:layout_constraintStart_toStartOf="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"/>
+
 
     <Button
         android:id="@+id/login_btn"
         android:layout_width="312dp"
-        android:layout_height="wrap_content"
+        android:layout_height="44dp"
         android:text="login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:backgroundTint="@color/blue"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginBottom="200dp"/>
+
+    <ImageView
+        android:id="@+id/fidle_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_fidle_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:layout_marginVertical="60dp"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/keep_earning"
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
