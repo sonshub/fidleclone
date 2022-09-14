@@ -5,4 +5,11 @@
     <string name="title_notifications">Notifications</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_to_keep_earning">Login to Keep Earning</string>
+    <string name="Not_registered">Not Registered?</string>
+    <string name="Forgot_password">Forgot Password</string>
+    <string name="Login">login</string>
+    <string name="todo">TODO</string>
+    <string name="enter_username">Enter username</string>
+    <string name="enter_password">Enter Password</string>
 </resources>
