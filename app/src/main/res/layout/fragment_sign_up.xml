@@ -11,8 +11,10 @@
         android:id="@+id/create_acct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create your Account"
-        android:textSize="20dp"
+        android:text="@string/create_your_account"
+        android:textSize="20sp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:padding="30dp"/>
@@ -22,9 +24,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:hint="Enter Username"
+        android:hint="@string/enter_username2"
+         android:layout_marginVertical="10sp"
         app:layout_constraintLeft_toLeftOf="@id/signUp_btn"
-       app:layout_constraintTop_toBottomOf="@id/password">
+        app:layout_constraintTop_toBottomOf="@id/password">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/enduser"
             android:layout_width="match_parent"
@@ -37,7 +40,7 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:layout_marginTop="30dp"
-        android:hint="Enter First name"
+        android:hint="@string/enter_first_name"
         app:layout_constraintLeft_toLeftOf="@id/signUp_btn"
         app:layout_constraintTop_toBottomOf="@id/create_acct">
         <com.google.android.material.textfield.TextInputEditText
@@ -51,9 +54,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:hint="Enter lastname"
+        android:hint="@string/enter_lastname"
         app:layout_constraintTop_toBottomOf="@id/user">
-
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -65,11 +67,11 @@
         android:id="@+id/signUp_btn"
         android:layout_width="312dp"
         android:layout_height="wrap_content"
-        android:text="signUp"
+        android:text="@string/signup"
         android:backgroundTint="@color/blue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 

@@ -12,4 +12,9 @@
     <string name="todo">TODO</string>
     <string name="enter_username">Enter username</string>
     <string name="enter_password">Enter Password</string>
+    <string name="create_your_account">Create your Account</string>
+    <string name="enter_username2">Enter Username</string>
+    <string name="enter_first_name">Enter First name</string>
+    <string name="enter_lastname">Enter lastname</string>
+    <string name="signup">signUp</string>
 </resources>
