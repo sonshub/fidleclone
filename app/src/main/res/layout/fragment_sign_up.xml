@@ -75,6 +75,64 @@
             android:padding="15dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <TextView
+        android:id="@+id/first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first_name"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/create_acct"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/first_fill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_first_name"
+        app:layout_constraintTop_toBottomOf="@id/first_name"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enter_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/last_name"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/first_fill"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_lastname"
+        app:layout_constraintTop_toBottomOf="@id/last_name"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
     <Button
         android:id="@+id/signUp_btn"
         android:layout_width="312dp"
