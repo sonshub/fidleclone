@@ -120,7 +120,7 @@
         android:id="@+id/password_fill"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_password1"
+        android:hint="@string/enter_password11"
         app:layout_constraintTop_toBottomOf="@id/password"
         android:paddingHorizontal="10dp"
         android:paddingTop="10dp">
@@ -131,12 +131,56 @@
             android:padding="15dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <TextView
+        android:id="@+id/confirm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_password22"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/password_fill"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_password11"
+        app:layout_constraintTop_toBottomOf="@id/confirm_button"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+           android:id="@+id/confirm_fill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By signing up you agree to our Terms and Policy"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/confirm_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
     <Button
         android:id="@+id/signUp_btn"
         android:layout_width="312dp"
         android:layout_height="wrap_content"
         android:text="@string/signup"
         android:backgroundTint="@color/blue"
+        app:layout_constraintTop_toBottomOf="@+id/policy"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
